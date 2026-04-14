@@ -26,7 +26,7 @@ const AuthPage = ({ type }) => {
             } else {
                 response = await signupUser(email, password);
             }
-
+            console.log(response)
             const userData = response.data;
             
             // 1. Update Context
